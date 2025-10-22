@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- รีเฟรชทุก 10 นาที (600 วินาที) -->
+  <meta http-equiv="refresh" content="600" />
+  <!-- โหลดไลบรารีฝัง Tableau (เวอร์ชัน 3) -->
+  <script type="module" src="https://prod-apnortheast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+  <style>
+    html,body{height:100%;margin:0}
+    #wrap{height:100%;width:100%;display:flex}
+    tableau-viz{flex:1 1 auto; width:100%; height:100%}
+  </style>
+  <title>Tableau Display</title>
+</head>
+<body>
+  <div id="wrap">
+    <tableau-viz
+      id="tableau-viz"
+      src="https://prod-apnortheast-a.online.tableau.com/t/pegasuslandtechnik/views/Dashboard/PD_monitor_1"
+      width="1920"
+      height="963"
+      toolbar="bottom">
+    </tableau-viz>
+  </div>
+</body>
+</html>
